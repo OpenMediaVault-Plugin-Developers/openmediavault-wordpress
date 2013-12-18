@@ -1,0 +1,77 @@
+#!/bin/sh
+#
+# @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
+# @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+# @copyright Copyright (c) 2013 OpenMediaVault Plugin Developers
+#
+# OpenMediaVault is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# OpenMediaVault is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with OpenMediaVault. If not, see <http://www.gnu.org/licenses/>.
+#
+
+set -e
+
+. /etc/default/openmediavault
+. /usr/share/openmediavault/scripts/helper-functions
+
+case "$1" in
+    configure)
+
+    if ! omv_config_exists "/config/services/wordpress"; then
+
+        AUTH_KEY=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        SECURE_AUTH_KEY=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        LOGGED_IN_KEY=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        NONCE_KEY=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+
+        AUTH_SALT=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        SECURE_AUTH_SALT=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        LOGGED_IN_SALT=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+        NONCE_SALT=$(</dev/urandom tr -dc "A-Za-z0-9!@#%^*" | head -c24)
+
+        echo "Creating Initial Configuration"
+        object="<enable>0</enable>"
+
+        object="${object}<auth_key>${AUTH_KEY}</auth_key>"
+        object="${object}<secure_auth_key>${SECURE_AUTH_KEY}</secure_auth_key>"
+        object="${object}<logged_in_key>${LOGGED_IN_KEY}</logged_in_key>"
+        object="${object}<nonce_key>${NONCE_KEY}</nonce_key>"
+
+        object="${object}<auth_salt>${AUTH_SALT}</auth_salt>"
+        object="${object}<secure_auth_salt>${SECURE_AUTH_SALT}</secure_auth_salt>"
+        object="${object}<logged_in_salt>${LOGGED_IN_SALT}</logged_in_salt>"
+        object="${object}<nonce_salt>${NONCE_SALT}</nonce_salt>"
+
+        object="${object}<db_host>localhost</db_host>"
+        object="${object}<db_user>wordpress</db_user>"
+        object="${object}<db_pass>openmediavault</db_pass>"
+        object="${object}<db_name>wordpress</db_name>"
+
+        object="${object}<showtab>0</showtab>"
+
+        omv_config_add_element "/config/services" "wordpress" "${object}" true
+    fi
+
+    chown -R openmediavault:openmediavault /var/www/wordpress
+
+    ;;
+
+    abort-upgrade|abort-remove|abort-deconfigure)
+    ;;
+
+    *)
+        echo "postinst called with unknown argument \`$1'" >&2
+        exit 1
+    ;;
+esac
+
+exit 0

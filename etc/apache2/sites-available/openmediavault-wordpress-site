@@ -1,0 +1,11 @@
+Alias /wordpress /var/www/wordpress
+
+<Directory /var/www/wordpress>
+  Options -Indexes
+    <FilesMatch \.php$>
+        FcgidWrapper /var/www/openmediavault/php-fcgi .php
+        SetHandler fcgid-script
+        Options +ExecCGI
+    </FilesMatch>
+  AllowOverride All
+</Directory>

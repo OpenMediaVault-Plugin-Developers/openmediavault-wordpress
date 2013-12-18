@@ -1,0 +1,5 @@
+var/www/openmediavault/*    var/www/openmediavault
+usr/share/openmediavault/*  usr/share/openmediavault
+var/www/wordpress/*         var/www/wordpress
+etc/apache2/*               etc/apache2
+usr/local/bin/*             usr/local/bin

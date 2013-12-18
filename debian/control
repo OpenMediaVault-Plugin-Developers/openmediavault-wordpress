@@ -1,0 +1,14 @@
+Source: openmediavault-wordpress
+Section: net
+Priority: optional
+Maintainer: OpenMediaVault Plugin Developers <plugins@omv-extras.org>
+Build-Depends: debhelper (>> 7)
+Standards-Version: 3.6.10
+
+Package: openmediavault-wordpress
+Architecture: all
+Depends: ${misc:Depends}, openmediavault (>= 0.5), openmediavault (<< 0.6), 
+ openmediavault-mysql (>= 0.5)
+Priority: optional
+Description: OpenMediaVault Wordpress plugin
+ WordPress is web software you can use to create a beautiful website or blog.
