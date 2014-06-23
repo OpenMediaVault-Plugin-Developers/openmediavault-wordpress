@@ -37,4 +37,3 @@ DB_NAME=$(omv_config_get "//services/wordpress/db_name")
 CMD="create database ${DB_NAME}; grant all on ${DB_NAME}.* to ${DB_NAME}@${DB_HOST} identified by '${DB_PASS}';FLUSH PRIVILEGES;"
 
 mysql --user=root --password=${WORDPRESSROOTPW} -Bse "${CMD}"
-#mysql --user=${DB_USER} --password=${DB_PASS} -s ${DB_NAME} < /var/www/wordpress/SQL/mysql.initial.sql
