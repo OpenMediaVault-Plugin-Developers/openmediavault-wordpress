@@ -1,0 +1,79 @@
+#!/bin/sh
+#
+# Copyright (C) 2013-2014 OpenMediaVault Plugin Developers
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
+
+# References:
+# http://wiki.nginx.org/WordPress
+# http://codex.wordpress.org/Nginx
+
+set -e
+
+. /etc/default/openmediavault
+. /usr/share/openmediavault/scripts/helper-functions
+
+WORDPRESS_SITE_ENABLED_CONF="/etc/nginx/openmediavault-webgui.d/openmediavault-wordpress-site.conf"
+
+if [ -e "${WORDPRESS_SITE_ENABLED_CONF}" ]; then
+    rm ${WORDPRESS_SITE_ENABLED_CONF}
+fi
+
+if [ "$(omv_config_get "//services/wordpress/enable")" != "1" ]; then
+    exit 0
+fi
+
+cat <<EOF > "${WORDPRESS_SITE_ENABLED_CONF}"
+location /wordpress/ {
+    alias /var/www/wordpress/;
+    index index.php;
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        fastcgi_pass unix:/var/run/php5-fpm-openmediavault-webgui.sock;
+        fastcgi_index index.php;
+        include fastcgi_params;
+    }
+
+    location = /wordpress/favicon.ico {
+	log_not_found off;
+	access_log off;
+    }
+
+    location = /wordpress/robots.txt {
+	allow all;
+	log_not_found off;
+	access_log off;
+    }
+
+    location /wordpress {
+        try_files $uri $uri/ /wordpress/index.php?$args;
+    }
+
+
+    location ~ /wordpress/\. {
+	deny all;
+    }
+
+    location ~* /wordpress/(?:uploads|files)/.*\.php$ {
+	deny all;
+    }
+
+    location ~* /wordpress/\.(js|css|png|jpg|jpeg|gif|ico)$ {
+        expires max;
+        log_not_found off;
+    }
+}
+EOF
+
+exit 0

@@ -2,28 +2,27 @@
 #
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
 # @author    OpenMediaVault Plugin Developers <plugins@omv-extras.org>
-# @copyright Copyright (c) 2013 OpenMediaVault Plugin Developers
+# @copyright Copyright (c) 2013-2014 OpenMediaVault Plugin Developers
 #
-# OpenMediaVault is free software: you can redistribute it and/or modify
+# This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # any later version.
 #
-# OpenMediaVault is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with OpenMediaVault. If not, see <http://www.gnu.org/licenses/>.
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 set -e
 
 . /etc/default/openmediavault
 . /usr/share/openmediavault/scripts/helper-functions
 
-WORDPRESS_SITE_CONF_NAME=openmediavault-wordpress-site
-WORDPRESS_SITE_ENABLED_CONF=/etc/apache2/sites-enabled/${WORDPRESS_SITE_CONF_NAME}
+WORDPRESS_SITE_ENABLED_CONF="/etc/nginx/openmediavault-webgui.d/openmediavault-wordpress-site.conf"
 
 case "$1" in
     purge)
@@ -32,9 +31,10 @@ case "$1" in
 
     remove)
         if [ -e ${WORDPRESS_SITE_ENABLED_CONF} ]; then
-            a2dissite ${WORDPRESS_SITE_CONF_NAME}
-            /etc/init.d/apache2 reload
+            rm -f ${WORDPRESS_SITE_ENABLED_CONF}
         fi
+
+        service nginx reload
     ;;
 
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)

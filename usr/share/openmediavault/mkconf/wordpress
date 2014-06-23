@@ -1,20 +1,20 @@
 #!/bin/sh
 #
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
-# Copyright (C) 2013 OpenMediaVault Plugin Developers
+# Copyright (C) 2013-2014 OpenMediaVault Plugin Developers
 #
-# This file is free software: you can redistribute it and/or modify
+# This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
 # the Free Software Foundation, either version 3 of the License, or
 # any later version.
 #
-# This file is distributed in the hope that it will be useful,
+# This program is distributed in the hope that it will be useful,
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # GNU General Public License for more details.
 #
 # You should have received a copy of the GNU General Public License
-# along with this file. If not, see <http://www.gnu.org/licenses/>.
+# along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 set -e
 
@@ -22,16 +22,9 @@ set -e
 . /usr/share/openmediavault/scripts/helper-functions
 
 WORDPRESS_CONFIG="/var/www/wordpress/wp-config.php"
-WORDPRESS_SITE_CONF_NAME=openmediavault-wordpress-site
-WORDPRESS_SITE_ENABLED_CONF=/etc/apache2/sites-enabled/${WORDPRESS_SITE_CONF_NAME}
 
 # Enable/disable site
 if [ "$(omv_config_get "//services/wordpress/enable")" != "1" ]; then
-    if [ -e ${WORDPRESS_SITE_ENABLED_CONF} ]; then
-        a2dissite ${WORDPRESS_SITE_CONF_NAME}
-        /etc/init.d/apache2 reload
-    fi
-
     exit 0
 fi
 
@@ -80,7 +73,3 @@ if ( !defined('ABSPATH') )
 
 require_once(ABSPATH . 'wp-settings.php');
 EOF
-
-a2enmod rewrite
-a2ensite ${WORDPRESS_SITE_CONF_NAME}
-/etc/init.d/apache2 reload
