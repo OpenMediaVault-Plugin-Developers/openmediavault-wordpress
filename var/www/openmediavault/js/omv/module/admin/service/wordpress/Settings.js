@@ -207,7 +207,7 @@ Ext.define("OMV.module.admin.service.wordpress.Settings", {
                 name    : "installdb",
                 text    : _("Install DB"),
                 scope   : this,
-                margins : "5 0 5 0",
+                margin  : "0 0 7 0",
                 handler : function() {
                     var me = this;
                     OMV.MessageBox.show({
@@ -260,7 +260,7 @@ Ext.define("OMV.module.admin.service.wordpress.Settings", {
                 name       : "launch-blog-site",
                 text       : _("Launch blog site"),
                 disabled   : true,
-                margins    : "0 0 5 0",
+                margin     : "0 0 7 0",
                 handler    : function() {
                     window.open("/wordpress/");
                 }
