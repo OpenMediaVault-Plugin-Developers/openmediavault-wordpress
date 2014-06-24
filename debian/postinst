@@ -76,6 +76,8 @@ case "$1" in
         wget ${LINK} -O ${FILE}
         tar -xzof ${FILE} -C ${INSTALL_DIR} --strip 1
         rm -f ${FILE}
+        
+        chown -R openmediavault:openmediavault ${INSTALL_DIR}
     else
         echo "Wordpress already installed."
     fi
