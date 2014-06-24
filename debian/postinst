@@ -23,7 +23,7 @@ set -e
 . /usr/share/openmediavault/scripts/helper-functions
 
 LINK="http://wordpress.org/latest.tar.gz"
-FILE="/tmp/latest.tar.gz2"
+FILE="/tmp/latest.tar.gz"
 INSTALL_DIR="/var/www/wordpress"
 
 case "$1" in
@@ -64,14 +64,13 @@ case "$1" in
         omv_config_add_element "/config/services" "wordpress" "${object}" true
     fi
 
-    mkdir -p ${INSTALL_DIR}
 
     if [ -f "${FILE}" ]; then
         rm -f ${FILE}
     fi
 
     wget ${LINK} -O ${FILE}
-    tar -xzof ${FILE} -C ${INSTALL_DIR}
+    tar -xzof ${FILE} -C ${INSTALL_DIR} --strip 1
     rm -f ${FILE}
 
     chown -R openmediavault:openmediavault ${INSTALL_DIR}
