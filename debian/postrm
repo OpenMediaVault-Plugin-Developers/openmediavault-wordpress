@@ -27,6 +27,7 @@ WORDPRESS_SITE_ENABLED_CONF="/etc/nginx/openmediavault-webgui.d/openmediavault-w
 case "$1" in
     purge)
         omv_config_delete "//services/wordpress"
+        rm -rf /var/www/wordpress
     ;;
 
     remove)
