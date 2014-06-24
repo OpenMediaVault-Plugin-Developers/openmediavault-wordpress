@@ -64,17 +64,18 @@ case "$1" in
         omv_config_add_element "/config/services" "wordpress" "${object}" true
     fi
 
+    if [ ! -d "${INSTALL_DIR} ]; then
+        mkdir -p ${INSTALL_DIR}
 
-    if [ -f "${FILE}" ]; then
+        if [ -f "${FILE}" ]; then
+            rm -f ${FILE}
+        fi
+
+        wget ${LINK} -O ${FILE}
+        tar -xzof ${FILE} -C ${INSTALL_DIR} --strip 1
         rm -f ${FILE}
     fi
-
-    wget ${LINK} -O ${FILE}
-    tar -xzof ${FILE} -C ${INSTALL_DIR} --strip 1
-    rm -f ${FILE}
-
-    chown -R openmediavault:openmediavault ${INSTALL_DIR}
-
+    
     dpkg-trigger update-fixperms
     dpkg-trigger update-locale
 

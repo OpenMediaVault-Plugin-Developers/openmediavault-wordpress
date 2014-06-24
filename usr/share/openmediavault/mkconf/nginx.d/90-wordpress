@@ -57,7 +57,7 @@ location /wordpress/ {
     }
 
     location /wordpress/ {
-        try_files $uri $uri/ /wordpress/index.php?$args;
+        try_files \$uri \$uri/ /wordpress/index.php?\$args;
     }
 
     location ~ /wordpress/\. {
