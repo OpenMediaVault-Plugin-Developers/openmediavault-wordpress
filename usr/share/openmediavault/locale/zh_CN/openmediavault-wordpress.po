@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# songming <by@songming.me>, 2013-2014
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2014-01-09 14:35+0000\n"
+"Last-Translator: songming <by@songming.me>\n"
+"Language-Team: Chinese (China) (http://www.transifex.com/projects/p/openmediavault-wordpress/language/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "确定要安装Wordpress 数据库吗？"
+
+msgid "Auth Key"
+msgstr "Auth Key"
+
+msgid "Auth salt"
+msgstr "Auth salt"
+
+msgid "Authentication failed"
+msgstr "验证失败"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog site"
+msgstr "Blog 站点"
+
+msgid "Command failed "
+msgstr "命令失败"
+
+msgid "Confirmation"
+msgstr "确认"
+
+msgid "Database Name"
+msgstr "数据库名称"
+
+msgid "Database Settings"
+msgstr "数据库设置"
+
+msgid "Empty command string"
+msgstr "空的命令字符串"
+
+msgid "Enable"
+msgstr "启用"
+
+msgid "Error "
+msgstr "错误"
+
+msgid "General settings"
+msgstr "常规设置"
+
+msgid "Hostname"
+msgstr "主机名"
+
+msgid "Install DB"
+msgstr "安装数据库"
+
+msgid "Installing Wordpress database"
+msgstr "安装 Wordpress 数据库中"
+
+msgid "Launch blog site"
+msgstr "运行 blog 网站"
+
+msgid "Logged In Key"
+msgstr "Logged In Key"
+
+msgid "Logged In salt"
+msgstr "Logged In salt"
+
+msgid "MySQL root Password"
+msgstr "MySQL root 密码"
+
+msgid "No connection to server"
+msgstr "没有连接到服务器"
+
+msgid "No login ID submitted"
+msgstr "没有提交登录 ID"
+
+msgid "No msg number submitted"
+msgstr "没有提交的消息数"
+
+msgid "No password submitted"
+msgstr "没有提交密码"
+
+msgid "No server banner"
+msgstr "没有server banner"
+
+msgid "No server specified"
+msgstr "没有指定服务器"
+
+msgid "Nonce Key"
+msgstr "Nonce Key"
+
+msgid "Nonce salt"
+msgstr "Nonce salt"
+
+msgid "Password"
+msgstr "密码"
+
+msgid "Premature end of list"
+msgstr "列表过早结束"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "安装时创建随机密钥，必须至少为8个字符长度。"
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr "安装时随机创建 salt，必须至少8个字符长度。"
+
+msgid "Secure Auth Key"
+msgstr "Secure Auth Key"
+
+msgid "Secure Auth salt"
+msgstr "Secure Auth salt"
+
+msgid "Settings"
+msgstr "设置"
+
+msgid "Show tab containing blog frame."
+msgstr "在标签页显示 blog 页面"
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "仅仅在安装 Wordpress 数据库时使用，不会进行保存。"
+
+msgid "Username"
+msgstr "用户名"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "中断"
+
+msgid "apop authentication failed"
+msgstr "APOP 验证失败"
+
+msgid "blog"
+msgstr "blog"
+
+msgid "connection does not exist"
+msgstr "连接不存在"
+
+msgid "connection not established"
+msgstr "连接未建立"
+
+msgid "no login ID submitted"
+msgstr "没有提交登录 ID"

@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# артур Мудрых <arturmon82@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2013-12-21 05:46+0000\n"
+"Last-Translator: артур Мудрых <arturmon82@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/openmediavault-wordpress/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "Вы уверены, что хотите установить базу данных Wordpress?"
+
+msgid "Auth Key"
+msgstr ""
+
+msgid "Auth salt"
+msgstr ""
+
+msgid "Authentication failed"
+msgstr "Ошибка аутентификации"
+
+msgid "Blog"
+msgstr "Блог"
+
+msgid "Blog site"
+msgstr "Блог сайта"
+
+msgid "Command failed "
+msgstr "Команда не выполнена"
+
+msgid "Confirmation"
+msgstr "Подтверждение"
+
+msgid "Database Name"
+msgstr "Имя базы данных"
+
+msgid "Database Settings"
+msgstr "Настройки базы данных"
+
+msgid "Empty command string"
+msgstr "Пустая строка команды"
+
+msgid "Enable"
+msgstr "Включить"
+
+msgid "Error "
+msgstr "Ошибка"
+
+msgid "General settings"
+msgstr "Общие параметры"
+
+msgid "Hostname"
+msgstr "Имя хоста"
+
+msgid "Install DB"
+msgstr "Установить DB"
+
+msgid "Installing Wordpress database"
+msgstr "Установка базы данных Wordpress"
+
+msgid "Launch blog site"
+msgstr "Запуск сайта блога"
+
+msgid "Logged In Key"
+msgstr ""
+
+msgid "Logged In salt"
+msgstr ""
+
+msgid "MySQL root Password"
+msgstr "MySQL root Пароль"
+
+msgid "No connection to server"
+msgstr "Нет связи с сервером"
+
+msgid "No login ID submitted"
+msgstr ""
+
+msgid "No msg number submitted"
+msgstr ""
+
+msgid "No password submitted"
+msgstr ""
+
+msgid "No server banner"
+msgstr ""
+
+msgid "No server specified"
+msgstr ""
+
+msgid "Nonce Key"
+msgstr "Одноразовый ключ"
+
+msgid "Nonce salt"
+msgstr ""
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Premature end of list"
+msgstr "Преждевременный конец списка"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "Произвольный ключ создается при установке. Должно быть не менее 8 символов."
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr ""
+
+msgid "Secure Auth Key"
+msgstr ""
+
+msgid "Secure Auth salt"
+msgstr ""
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "Show tab containing blog frame."
+msgstr "Показать вкладку, содержащую блог."
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "Используется только для установки базы данных Wordpress и не будут сохранены."
+
+msgid "Username"
+msgstr "Имя пользователя"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "Прекратить"
+
+msgid "apop authentication failed"
+msgstr "Ошибка аутентификации apop"
+
+msgid "blog"
+msgstr "блог"
+
+msgid "connection does not exist"
+msgstr "Подключение не существует"
+
+msgid "connection not established"
+msgstr "Соединение не установлено"
+
+msgid "no login ID submitted"
+msgstr ""

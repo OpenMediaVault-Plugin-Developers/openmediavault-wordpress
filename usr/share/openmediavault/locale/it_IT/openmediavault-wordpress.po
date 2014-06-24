@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Paolo Velati <paolo.velati@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2014-01-13 00:48+0000\n"
+"Last-Translator: Paolo Velati <paolo.velati@gmail.com>\n"
+"Language-Team: Italian (http://www.transifex.com/projects/p/openmediavault-wordpress/language/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "Sei sicuro di voler installare il database Wordpress?"
+
+msgid "Auth Key"
+msgstr "Auth Key"
+
+msgid "Auth salt"
+msgstr "Auth salt"
+
+msgid "Authentication failed"
+msgstr "Autenticazione fallita"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog site"
+msgstr "Blog"
+
+msgid "Command failed "
+msgstr "Comando fallito"
+
+msgid "Confirmation"
+msgstr "Conferma"
+
+msgid "Database Name"
+msgstr "Nome Database"
+
+msgid "Database Settings"
+msgstr "Impostazioni Database"
+
+msgid "Empty command string"
+msgstr "Stringa comando vuota"
+
+msgid "Enable"
+msgstr "Abilita"
+
+msgid "Error "
+msgstr "Errore"
+
+msgid "General settings"
+msgstr "Impostazioni generali"
+
+msgid "Hostname"
+msgstr "Nome Host"
+
+msgid "Install DB"
+msgstr "Installa Database"
+
+msgid "Installing Wordpress database"
+msgstr "Installazione database Wordpress"
+
+msgid "Launch blog site"
+msgstr "Avvia blog"
+
+msgid "Logged In Key"
+msgstr "Registrato nella Key"
+
+msgid "Logged In salt"
+msgstr "Registrato in Salt"
+
+msgid "MySQL root Password"
+msgstr "Password root MySQL"
+
+msgid "No connection to server"
+msgstr "Nessuna connessione al server"
+
+msgid "No login ID submitted"
+msgstr "Nessun ID login inviato"
+
+msgid "No msg number submitted"
+msgstr "Nessun numero msg inviato"
+
+msgid "No password submitted"
+msgstr "Nessuna password inviata"
+
+msgid "No server banner"
+msgstr "Nessun logo del server"
+
+msgid "No server specified"
+msgstr "Nessun server specificato"
+
+msgid "Nonce Key"
+msgstr "Nonce Key"
+
+msgid "Nonce salt"
+msgstr "Nonce salt"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Premature end of list"
+msgstr "Fine prematura della lista"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "Key casuale creato al momento dell'installazione. Deve essere di almeno 8 caratteri."
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr "Salt casuale creato al momento dell'installazione. Deve essere di almeno 8 caratteri."
+
+msgid "Secure Auth Key"
+msgstr "Secure Auth Key"
+
+msgid "Secure Auth salt"
+msgstr "Secure Auth salt"
+
+msgid "Settings"
+msgstr "Impostazioni"
+
+msgid "Show tab containing blog frame."
+msgstr "Mostra un pannello contenente il blog."
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "Usata solo per l'installazione del database di Wordpress, non verrà salvata."
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "annulla"
+
+msgid "apop authentication failed"
+msgstr "autenticazione apop fallita"
+
+msgid "blog"
+msgstr "blog"
+
+msgid "connection does not exist"
+msgstr "connessione inesistente"
+
+msgid "connection not established"
+msgstr "connessione non stabilita"
+
+msgid "no login ID submitted"
+msgstr "nessun ID login inviato"

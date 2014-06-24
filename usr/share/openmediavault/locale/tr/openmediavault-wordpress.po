@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Murat ENEZ <muratenez@gmail.com>, 2013
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2013-12-23 19:56+0000\n"
+"Last-Translator: Murat ENEZ <muratenez@gmail.com>\n"
+"Language-Team: Turkish (http://www.transifex.com/projects/p/openmediavault-wordpress/language/tr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "Wordpress veritabanını kurmak istediğinden emin misin?"
+
+msgid "Auth Key"
+msgstr "Yetki Anahtarı"
+
+msgid "Auth salt"
+msgstr "Auth salt"
+
+msgid "Authentication failed"
+msgstr "Kimlik doğrulama başarısız oldu"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog site"
+msgstr "Blog site"
+
+msgid "Command failed "
+msgstr "Komut Hatası"
+
+msgid "Confirmation"
+msgstr "Onay"
+
+msgid "Database Name"
+msgstr "Veritabanı Adı"
+
+msgid "Database Settings"
+msgstr "Veritabanı Ayarları"
+
+msgid "Empty command string"
+msgstr "Boş komut dizesi"
+
+msgid "Enable"
+msgstr "Etkinleştir"
+
+msgid "Error "
+msgstr "Hata"
+
+msgid "General settings"
+msgstr "Genel Ayarlar"
+
+msgid "Hostname"
+msgstr "Ana Makine Adı"
+
+msgid "Install DB"
+msgstr "VT Kur"
+
+msgid "Installing Wordpress database"
+msgstr "Wordpress veritabanı kuruluyor"
+
+msgid "Launch blog site"
+msgstr "Blog siteyi çalıştır"
+
+msgid "Logged In Key"
+msgstr "Kayıtlı Anahtar"
+
+msgid "Logged In salt"
+msgstr "Salt kayıtlı"
+
+msgid "MySQL root Password"
+msgstr "MySQL ana Şifresi"
+
+msgid "No connection to server"
+msgstr "Sunucuyla bağlantı yok"
+
+msgid "No login ID submitted"
+msgstr "Giriş kimliği gönderilmedi"
+
+msgid "No msg number submitted"
+msgstr "Mesaj numarası gönderilmedi"
+
+msgid "No password submitted"
+msgstr "Şire gönderilmedi"
+
+msgid "No server banner"
+msgstr "Sunucu afişi yok"
+
+msgid "No server specified"
+msgstr "Sunucu belirtilmedi"
+
+msgid "Nonce Key"
+msgstr "Güncel Anahtar"
+
+msgid "Nonce salt"
+msgstr "Güncel Salt"
+
+msgid "Password"
+msgstr "Şifre"
+
+msgid "Premature end of list"
+msgstr "Listenin sonu belirsiz"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "Kurulum sırasında rastgele anahtar oluşturuldu. En az 8 karakter uzunluğunda olmalı."
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr "Kurulum sırasında rastgele salt oluşturuldu. En az 8 karakter uzunluğunda olmalı."
+
+msgid "Secure Auth Key"
+msgstr "Güvenli Kimlik Doğrulama Anahtarı"
+
+msgid "Secure Auth salt"
+msgstr "Güvenli Salt Anahtarı"
+
+msgid "Settings"
+msgstr "Ayarlar"
+
+msgid "Show tab containing blog frame."
+msgstr "Blog çerçevesini içeren sekmeyi göster."
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "Sadece Wordpress veritabanını yüklemek için kullanılır ve kayıt edilmez."
+
+msgid "Username"
+msgstr "Kullanıcı Adı"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "sonlandır"
+
+msgid "apop authentication failed"
+msgstr "apop kimlik doğrulaması başarısız oldu"
+
+msgid "blog"
+msgstr "blog"
+
+msgid "connection does not exist"
+msgstr "bağlantı yok"
+
+msgid "connection not established"
+msgstr "bağlantı kurulmadı"
+
+msgid "no login ID submitted"
+msgstr "giriş kimliği gönderilmedi"

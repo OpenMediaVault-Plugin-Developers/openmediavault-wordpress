@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Stefan Thrane Overby <stoverby@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2014-04-11 07:22+0000\n"
+"Last-Translator: Stefan Thrane Overby <stoverby@gmail.com>\n"
+"Language-Team: Danish (http://www.transifex.com/projects/p/openmediavault-wordpress/language/da/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: da\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "Er du sikker på, at du vil installere Wordpress databasen?"
+
+msgid "Auth Key"
+msgstr "Godkend Nøgle"
+
+msgid "Auth salt"
+msgstr "Godkend salt"
+
+msgid "Authentication failed"
+msgstr "Godkendelse fejlede"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Blog site"
+msgstr "Blog side"
+
+msgid "Command failed "
+msgstr "Kommando fejlede"
+
+msgid "Confirmation"
+msgstr "Bekræftelse"
+
+msgid "Database Name"
+msgstr "Database Navn"
+
+msgid "Database Settings"
+msgstr "Database Indstillinger"
+
+msgid "Empty command string"
+msgstr "Tøm kommando streng"
+
+msgid "Enable"
+msgstr "Aktiver"
+
+msgid "Error "
+msgstr "Fejl"
+
+msgid "General settings"
+msgstr "Generelle Indstillinger"
+
+msgid "Hostname"
+msgstr "Værtsnavn"
+
+msgid "Install DB"
+msgstr "Installer DB"
+
+msgid "Installing Wordpress database"
+msgstr "Installere Wordpress database"
+
+msgid "Launch blog site"
+msgstr "Start blog side"
+
+msgid "Logged In Key"
+msgstr "Logget Ind Nøgle"
+
+msgid "Logged In salt"
+msgstr "Logget Ind salt"
+
+msgid "MySQL root Password"
+msgstr "MySQL rod Adgangskode"
+
+msgid "No connection to server"
+msgstr "Ingen forbindelse til server"
+
+msgid "No login ID submitted"
+msgstr "Intet log ind ID indsendt"
+
+msgid "No msg number submitted"
+msgstr "Ingen msg numre indsendt"
+
+msgid "No password submitted"
+msgstr "Ingen adgangskode indsendt"
+
+msgid "No server banner"
+msgstr "Ingen server banner"
+
+msgid "No server specified"
+msgstr "Ingen server specificeret"
+
+msgid "Nonce Key"
+msgstr "Når Nøgle"
+
+msgid "Nonce salt"
+msgstr "Når salt"
+
+msgid "Password"
+msgstr "Adgangskode"
+
+msgid "Premature end of list"
+msgstr "Fremskynd slutning af liste"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "Tilfældig nøgle oprettet ved installation. Skal være mindst 8 bogstaver lang."
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr "Tilfældig salt oprettet ved installation. Skal være mindst 8 bogstaver lang."
+
+msgid "Secure Auth Key"
+msgstr "Sikre Godkend Nøgle"
+
+msgid "Secure Auth salt"
+msgstr "Sikre Godkend salt"
+
+msgid "Settings"
+msgstr "Indstillinger"
+
+msgid "Show tab containing blog frame."
+msgstr "Vis fanen, der indeholder blog ramme"
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "Kun brugt til installering af Wordpress database og vil ikke blive gemt."
+
+msgid "Username"
+msgstr "Brugernavn"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "om"
+
+msgid "apop authentication failed"
+msgstr "apop godkendelse fejlede"
+
+msgid "blog"
+msgstr "blog"
+
+msgid "connection does not exist"
+msgstr "forbindelse findes ikke"
+
+msgid "connection not established"
+msgstr "forbindelse ikke oprettet"
+
+msgid "no login ID submitted"
+msgstr "intet log ind ID indsendt"

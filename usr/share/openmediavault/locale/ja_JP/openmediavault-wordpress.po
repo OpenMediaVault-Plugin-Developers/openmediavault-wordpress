@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Toshihiro Kan <kansuke4649@gmail.com>, 2014
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-12-18 16:24-0600\n"
+"PO-Revision-Date: 2014-02-14 00:37+0000\n"
+"Last-Translator: Toshihiro Kan <kansuke4649@gmail.com>\n"
+"Language-Team: Japanese (Japan) (http://www.transifex.com/projects/p/openmediavault-wordpress/language/ja_JP/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ja_JP\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Are you sure you want to install the Wordpress database?"
+msgstr "Wordpressデータベースをインストールしてもよろしいですか？"
+
+msgid "Auth Key"
+msgstr "認証キー"
+
+msgid "Auth salt"
+msgstr "認証ソルト"
+
+msgid "Authentication failed"
+msgstr "認証失敗"
+
+msgid "Blog"
+msgstr "ブログ"
+
+msgid "Blog site"
+msgstr "ブログサイト"
+
+msgid "Command failed "
+msgstr "コマンド失敗"
+
+msgid "Confirmation"
+msgstr "確認"
+
+msgid "Database Name"
+msgstr "データベース名"
+
+msgid "Database Settings"
+msgstr "データベース設定"
+
+msgid "Empty command string"
+msgstr "空のコマンド文字列"
+
+msgid "Enable"
+msgstr "有効"
+
+msgid "Error "
+msgstr "エラー"
+
+msgid "General settings"
+msgstr "一般設定"
+
+msgid "Hostname"
+msgstr "ホスト名"
+
+msgid "Install DB"
+msgstr "DBのインストール"
+
+msgid "Installing Wordpress database"
+msgstr "Wordpressデータベースをインストールしています"
+
+msgid "Launch blog site"
+msgstr "ブログサイトの起動"
+
+msgid "Logged In Key"
+msgstr "キーでログイン"
+
+msgid "Logged In salt"
+msgstr "ソルトでログイン"
+
+msgid "MySQL root Password"
+msgstr "MySQL rootパスワード"
+
+msgid "No connection to server"
+msgstr "サーバへの接続はありません"
+
+msgid "No login ID submitted"
+msgstr "提出されたログインIDはありません"
+
+msgid "No msg number submitted"
+msgstr "提出されたメッセージナンバーはありません"
+
+msgid "No password submitted"
+msgstr "提出されパスワードはありません"
+
+msgid "No server banner"
+msgstr "サーバのバナーはありません"
+
+msgid "No server specified"
+msgstr "サーバーが設定されていません"
+
+msgid "Nonce Key"
+msgstr "Nonce Key"
+
+msgid "Nonce salt"
+msgstr "Nonce salt"
+
+msgid "Password"
+msgstr "パスワード"
+
+msgid "Premature end of list"
+msgstr "リストの途中終了"
+
+msgid ""
+"Random key created at installation.  Must be at least 8 characters long."
+msgstr "インストール時に作成されたランダムキー。 8文字以上でなければなりません。"
+
+msgid ""
+"Random salt created at installation.  Must be at least 8 characters long."
+msgstr "インストール時に作成されたランダムソルト。 8文字以上でなければなりません。"
+
+msgid "Secure Auth Key"
+msgstr "セキュア認証キー"
+
+msgid "Secure Auth salt"
+msgstr "セキュア認証ソルト"
+
+msgid "Settings"
+msgstr "設定"
+
+msgid "Show tab containing blog frame."
+msgstr "ブログフレームを含むタブを表示します。"
+
+msgid "Used only for installing Wordpress database and will not be saved."
+msgstr "Wordpressのデータベースをインストールするためにのみ使用され、保存されることはありません。"
+
+msgid "Username"
+msgstr "ユーザー名"
+
+msgid "Wordpress"
+msgstr "Wordpress"
+
+msgid "abort"
+msgstr "中止"
+
+msgid "apop authentication failed"
+msgstr "APOP認証に失敗しました"
+
+msgid "blog"
+msgstr "ブログ"
+
+msgid "connection does not exist"
+msgstr "接続が存在しません"
+
+msgid "connection not established"
+msgstr "接続が確立されていません"
+
+msgid "no login ID submitted"
+msgstr "提出されたログインIDはありません"
