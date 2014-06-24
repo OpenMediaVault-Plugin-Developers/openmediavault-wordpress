@@ -65,6 +65,8 @@ case "$1" in
     fi
 
     if [ ! -d "${INSTALL_DIR}" ]; then
+        echo "Installing Wordpress..."
+        
         mkdir -p ${INSTALL_DIR}
 
         if [ -f "${FILE}" ]; then
@@ -74,6 +76,8 @@ case "$1" in
         wget ${LINK} -O ${FILE}
         tar -xzof ${FILE} -C ${INSTALL_DIR} --strip 1
         rm -f ${FILE}
+    else
+        echo "Wordpress already installed."
     fi
     
     dpkg-trigger update-fixperms
