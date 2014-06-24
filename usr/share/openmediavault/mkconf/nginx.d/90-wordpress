@@ -46,27 +46,26 @@ location /wordpress/ {
     }
 
     location = /wordpress/favicon.ico {
-	log_not_found off;
-	access_log off;
+    log_not_found off;
+    access_log off;
     }
 
     location = /wordpress/robots.txt {
-	allow all;
-	log_not_found off;
-	access_log off;
+    allow all;
+    log_not_found off;
+    access_log off;
     }
 
     location /wordpress {
         try_files $uri $uri/ /wordpress/index.php?$args;
     }
 
-
     location ~ /wordpress/\. {
-	deny all;
+    deny all;
     }
 
     location ~* /wordpress/(?:uploads|files)/.*\.php$ {
-	deny all;
+    deny all;
     }
 
     location ~* /wordpress/\.(js|css|png|jpg|jpeg|gif|ico)$ {

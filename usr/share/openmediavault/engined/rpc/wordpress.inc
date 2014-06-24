@@ -1,6 +1,5 @@
 <?php
 /**
- *
  * @license    http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @copyright  Copyright (c) 2013 OpenMediaVault Plugin Developers
  *
@@ -30,10 +29,23 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         return "Wordpress";
     }
 
+    private function getPluginName() {
+        return strtolower( $this->getName() );
+    }
+
+    private function getXPath() {
+        $path = sprintf( "//services/%s", $this->getPluginName() );
+        return $path;
+    }
+
+    private function getEventMessagePath() {
+        $path = sprintf( "org.openmediavault.services.%s", $this->getPluginName() );
+        return $path;
+    }
+
     public function initialize() {
         $this->registerMethod("getSettings");
         $this->registerMethod("setSettings");
-
         $this->registerMethod("doInstallDB");
     }
 
@@ -44,14 +56,13 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         $this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
 
         // Get configuration object
-        $xpath  = "//services/wordpress";
-        $object = $xmlConfig->get($xpath);
+        $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
             throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
 
         // Modify result data
-        $object['enable']    = boolval($object['enable']);
-        $object['showtab']   = boolval($object['showtab']);
+        $object['enable']  = boolval($object['enable']);
+        $object['showtab'] = boolval($object['showtab']);
 
         return $object;
     }
@@ -61,6 +72,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
 
         // Validate the RPC caller context.
         $this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
+
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, '{
             "type"       : "object",
@@ -103,13 +115,13 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         );
 
         // Set configuration object
-        if (FALSE === $xmlConfig->replace("//services/wordpress", $object))
+        if (FALSE === $xmlConfig->replace($this->getXPath(), $object))
             throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
 
         // Notify general configuration changes
         $dispatcher = &OMVNotifyDispatcher::getInstance();
         $dispatcher->notify(OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.wordpress", $object);
+            $this->getEventMessagePath(), $object);
     }
 
     public function doInstallDB($params, $context) {
@@ -131,8 +143,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         }');
 
         // Get configuration object
-        $xpath  = "//services/wordpress";
-        $object = $xmlConfig->get($xpath);
+        $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
             throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
 
@@ -143,7 +154,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         $object['db_pass'] = $params['db_pass'];
 
         // Set configuration object
-        if (FALSE === $xmlConfig->replace($xpath, $object))
+        if (FALSE === $xmlConfig->replace($this->getXPath(), $object))
             throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
 
         //create password file
@@ -158,7 +169,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         // Notify general configuration changes
         $dispatcher = &OMVNotifyDispatcher::getInstance();
         $dispatcher->notify(OMV_NOTIFY_MODIFY,
-            "org.openmediavault.services.wordpress", $object);
+            $this->getEventMessagePath(), $object);
     }
 }
 
