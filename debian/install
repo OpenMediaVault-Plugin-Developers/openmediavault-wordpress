@@ -1,4 +1,3 @@
 var/www/openmediavault/*    var/www/openmediavault
 usr/share/openmediavault/*  usr/share/openmediavault
-var/www/wordpress/*         var/www/wordpress
 usr/local/bin/*             usr/local/bin
