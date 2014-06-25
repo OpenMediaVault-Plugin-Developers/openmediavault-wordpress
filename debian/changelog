@@ -1,10 +1,10 @@
-openmediavault-wordpress (0.6) UNRELEASED; urgency=low
+openmediavault-wordpress (0.6) stable; urgency=low
 
   * Update for kralizec
   * Update for nginx
   * Download latest wordpress when installing
 
- -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Mon, 23 Jun 2014 16:34:02 -0500
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Wed, 25 Jun 2014 08:24:08 -0500
 
 openmediavault-wordpress (0.5) stable; urgency=low
 
