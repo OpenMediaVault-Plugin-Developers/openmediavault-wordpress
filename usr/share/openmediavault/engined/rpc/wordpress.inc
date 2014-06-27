@@ -58,7 +58,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         // Get configuration object
         $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
+            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $this->getXPath() );
 
         // Modify result data
         $object['enable']  = boolval($object['enable']);
@@ -145,7 +145,7 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         // Get configuration object
         $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $xpath);
+            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $this->getXPath() );
 
         // Modify result data
         $object['db_host'] = $params['db_host'];
