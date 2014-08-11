@@ -24,48 +24,59 @@ require_once("openmediavault/initscript.inc");
 require_once("openmediavault/log.inc");
 
 class OMVModuleWordpress extends OMVModuleServiceAbstract
-    implements OMVINotifyListener {
+    implements OMVINotifyListener
+{
 
-    public function getName() {
+    public function getName()
+    {
         return "wordpress";
     }
 
-    private function getPluginName() {
+    private function getPluginName()
+    {
         return strtolower( $this->getName() );
     }
 
-    private function getXPath() {
-        $path = sprintf( "//services/%s", $this->getPluginName() );
-        return $path;
+    private function getXPath()
+    {
+        return sprintf( "//services/%s", $this->getPluginName() );
     }
 
-    private function getEventMessagePath() {
-        $path = sprintf( "org.openmediavault.services.%s", $this->getPluginName() );
-        return $path;
+    private function getEventMessagePath()
+    {
+        return sprintf( "org.openmediavault.services.%s", $this->getPluginName() );
     }
 
-    public function applyConfig() {
+    public function applyConfig()
+    {
         $cmd = "omv-mkconf wordpress 2>&1";
         if(0 !== $this->exec($cmd, $output))
-            throw new OMVException(OMVErrorMsg::E_EXEC_FAILED, $cmd, implode("\n", $output));
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_EXEC_FAILED,
+                $cmd,
+                implode("\n", $output)
+            );
+        }
     }
 
-    function bindListeners(OMVNotifyDispatcher $dispatcher) {
+    function bindListeners(OMVNotifyDispatcher $dispatcher)
+    {
         $dispatcher->addListener(
             OMV_NOTIFY_CREATE | OMV_NOTIFY_MODIFY | OMV_NOTIFY_DELETE,
             $this->getEventMessagePath(),
-            array($this, "setDirty"));
-            
+            array($this, "setDirty")
+        );
+
         $moduleMgr = &OMVModuleMgr::getInstance();
         $dispatcher->addListener(
             OMV_NOTIFY_MODIFY,
             $this->getEventMessagePath(),
-            array($moduleMgr->getModule("webserver"), "setDirty"));            
+            array($moduleMgr->getModule("webserver"), "setDirty")
+        );
     }
 }
 
 // Register module
 $moduleMgr = &OMVModuleMgr::getInstance();
 $moduleMgr->registerModule(new OMVModuleWordpress());
-
-?>

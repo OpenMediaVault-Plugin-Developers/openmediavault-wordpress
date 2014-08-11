@@ -23,55 +23,71 @@ require_once("openmediavault/util.inc");
 require_once("openmediavault/rpcservice.inc");
 require_once("openmediavault/notify.inc");
 
-class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
-
-    public function getName() {
+class OMVRpcServiceWordpress extends OMVRpcServiceAbstract
+{
+    public function getName()
+    {
         return "Wordpress";
     }
 
-    private function getPluginName() {
+    private function getPluginName()
+    {
         return strtolower( $this->getName() );
     }
 
-    private function getXPath() {
-        $path = sprintf( "//services/%s", $this->getPluginName() );
-        return $path;
+    private function getXPath()
+    {
+        return sprintf( "//services/%s", $this->getPluginName() );
     }
 
-    private function getEventMessagePath() {
-        $path = sprintf( "org.openmediavault.services.%s", $this->getPluginName() );
-        return $path;
+    private function getEventMessagePath()
+    {
+        return sprintf( "org.openmediavault.services.%s", $this->getPluginName() );
     }
 
-    public function initialize() {
+    public function initialize()
+    {
         $this->registerMethod("getSettings");
         $this->registerMethod("setSettings");
         $this->registerMethod("doInstallDB");
     }
 
-    public function getSettings($params, $context) {
+    public function getSettings($params, $context)
+    {
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
+        $this->validateMethodContext(
+            $context,
+            array( "role" => OMV_ROLE_ADMINISTRATOR )
+        );
 
         // Get configuration object
         $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $this->getXPath() );
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
+                $this->getXPath()
+            );
+        }
 
         // Modify result data
-        $object['enable']  = boolval($object['enable']);
-        $object['showtab'] = boolval($object['showtab']);
+        $object['enable']  = boolvalEx($object['enable']);
+        $object['showtab'] = boolvalEx($object['showtab']);
 
         return $object;
     }
 
-    public function setSettings($params, $context) {
+    public function setSettings($params, $context)
+    {
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
+        $this->validateMethodContext(
+            $context,
+            array( "role" => OMV_ROLE_ADMINISTRATOR )
+        );
 
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, '{
@@ -116,19 +132,30 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
 
         // Set configuration object
         if (FALSE === $xmlConfig->replace($this->getXPath(), $object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
+            );
+        }
 
         // Notify general configuration changes
         $dispatcher = &OMVNotifyDispatcher::getInstance();
-        $dispatcher->notify(OMV_NOTIFY_MODIFY,
-            $this->getEventMessagePath(), $object);
+        $dispatcher->notify(
+            OMV_NOTIFY_MODIFY,
+            $this->getEventMessagePath(),
+            $object
+        );
     }
 
-    public function doInstallDB($params, $context) {
+    public function doInstallDB($params, $context)
+    {
         global $xmlConfig;
 
         // Validate the RPC caller context.
-        $this->validateMethodContext($context, array( "role" => OMV_ROLE_ADMINISTRATOR ));
+        $this->validateMethodContext(
+            $context,
+            array( "role" => OMV_ROLE_ADMINISTRATOR )
+        );
 
         // Validate the parameters of the RPC service method.
         $this->validateMethodParams($params, '{
@@ -145,7 +172,12 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
         // Get configuration object
         $object = $xmlConfig->get( $this->getXPath() );
         if (is_null($object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED, $this->getXPath() );
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_GET_OBJECT_FAILED,
+                $this->getXPath()
+            );
+        }
 
         // Modify result data
         $object['db_host'] = $params['db_host'];
@@ -155,26 +187,36 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract {
 
         // Set configuration object
         if (FALSE === $xmlConfig->replace($this->getXPath(), $object))
-            throw new OMVException(OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED);
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_CONFIG_SET_OBJECT_FAILED
+            );
+        }
 
         //create password file
         $file = "/tmp/.openmediavault-wordpress-mysql-pwd";
         file_put_contents($file, $params['root_pass']);
 
         // install database
-        $cmd = "/usr/local/bin/create_wordpress_db 2>&1";
+        $cmd = "omv-mkconf wordpress createdb 2>&1";
         if(0 !== $this->exec($cmd, $output))
-            throw new OMVException(OMVErrorMsg::E_EXEC_FAILED, $cmd, implode("\n", $output));
+        {
+            throw new OMVException(
+                OMVErrorMsg::E_EXEC_FAILED,
+                $cmd,
+                implode("\n", $output)
+            );
+        }
 
         // Notify general configuration changes
         $dispatcher = &OMVNotifyDispatcher::getInstance();
-        $dispatcher->notify(OMV_NOTIFY_MODIFY,
-            $this->getEventMessagePath(), $object);
+        $dispatcher->notify(
+            OMV_NOTIFY_MODIFY,
+            $this->getEventMessagePath(),$object
+        );
     }
 }
 
 // Register the RPC service.
 $rpcServiceMgr = &OMVRpcServiceMgr::getInstance();
 $rpcServiceMgr->registerService(new OMVRpcServiceWordpress());
-
-?>
