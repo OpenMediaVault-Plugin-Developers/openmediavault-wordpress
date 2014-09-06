@@ -73,8 +73,8 @@ class OMVRpcServiceWordpress extends OMVRpcServiceAbstract
         }
 
         // Modify result data
-        $object['enable']  = boolvalEx($object['enable']);
-        $object['showtab'] = boolvalEx($object['showtab']);
+        $object['enable']  = boolval($object['enable']);
+        $object['showtab'] = boolval($object['showtab']);
 
         return $object;
     }

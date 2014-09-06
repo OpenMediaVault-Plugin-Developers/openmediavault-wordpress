@@ -1,3 +1,9 @@
+openmediavault-wordpress (1.0.1) stable; urgency=low
+
+  * Minor updates
+
+ -- OpenMediaVault Plugin Developers <plugins@omv-extras.org>  Tue, 19 Aug 2014 18:18:08 -0500
+
 openmediavault-wordpress (1.0) stable; urgency=low
 
   * Update locales

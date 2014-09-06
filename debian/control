@@ -7,7 +7,7 @@ Standards-Version: 3.9.3
 
 Package: openmediavault-wordpress
 Architecture: all
-Depends: ${misc:Depends}, openmediavault (>= 0.6.0.12), openmediavault-mysql (>= 0.6)
+Depends: ${misc:Depends}, openmediavault (>= 1.0.8), openmediavault-mysql (>= 1.0.5)
 Priority: optional
 Description: OpenMediaVault Wordpress plugin
  WordPress is web software you can use to create a beautiful website or blog.
