@@ -3,24 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# zubr139, 2013
-# zubr139, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-wordpress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-18 16:24-0600\n"
-"PO-Revision-Date: 2014-11-14 19:52+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/openmediavault-wordpress/language/uk/)\n"
+"PO-Revision-Date: 2013-12-18 22:25+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Galician (http://www.transifex.com/projects/p/openmediavault-wordpress/language/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: gl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Are you sure you want to install the Wordpress database?"
-msgstr "Дійсно встановити базу даних Wordpress?"
+msgstr ""
 
 msgid "Auth Key"
 msgstr ""
@@ -29,43 +27,43 @@ msgid "Auth salt"
 msgstr ""
 
 msgid "Authentication failed"
-msgstr "Помилка аутентифікації"
+msgstr ""
 
 msgid "Blog"
-msgstr "Блоґ"
+msgstr ""
 
 msgid "Blog site"
-msgstr "Блоґ сайту"
+msgstr ""
 
 msgid "Command failed "
 msgstr ""
 
 msgid "Confirmation"
-msgstr "Підтвердження"
+msgstr ""
 
 msgid "Database Name"
-msgstr "Ім'я бази даних"
+msgstr ""
 
 msgid "Database Settings"
-msgstr "Налаштування бази даних"
+msgstr ""
 
 msgid "Empty command string"
-msgstr "Порожній командний рядок"
+msgstr ""
 
 msgid "Enable"
-msgstr "Увімкнути"
+msgstr ""
 
 msgid "Error "
-msgstr "Помилка"
+msgstr ""
 
 msgid "General settings"
-msgstr "Загальні налаштування"
+msgstr ""
 
 msgid "Hostname"
-msgstr "Ім'я вузла"
+msgstr ""
 
 msgid "Install DB"
-msgstr "Встановити БД"
+msgstr ""
 
 msgid "Installing Wordpress database"
 msgstr ""
@@ -80,7 +78,7 @@ msgid "Logged In salt"
 msgstr ""
 
 msgid "MySQL root Password"
-msgstr "Пароль MySQL root"
+msgstr ""
 
 msgid "No connection to server"
 msgstr ""
@@ -107,7 +105,7 @@ msgid "Nonce salt"
 msgstr ""
 
 msgid "Password"
-msgstr "Пароль"
+msgstr ""
 
 msgid "Premature end of list"
 msgstr ""
@@ -127,34 +125,34 @@ msgid "Secure Auth salt"
 msgstr ""
 
 msgid "Settings"
-msgstr "Налаштування"
+msgstr ""
 
 msgid "Show tab containing blog frame."
-msgstr "Показати вкладку, що містить блоґ у вікні."
+msgstr ""
 
 msgid "Used only for installing Wordpress database and will not be saved."
-msgstr "Використовується лиш для встановлення бази даних Wordpress і не буде збережено."
+msgstr ""
 
 msgid "Username"
-msgstr "Ім'я користувача"
+msgstr ""
 
 msgid "Wordpress"
-msgstr "Wordpress"
+msgstr ""
 
 msgid "abort"
-msgstr "викинути"
+msgstr ""
 
 msgid "apop authentication failed"
-msgstr "Помилка аутентифікації apop"
+msgstr ""
 
 msgid "blog"
-msgstr "блоґ"
+msgstr ""
 
 msgid "connection does not exist"
 msgstr ""
 
 msgid "connection not established"
-msgstr "з'єднання не встановлено"
+msgstr ""
 
 msgid "no login ID submitted"
 msgstr ""

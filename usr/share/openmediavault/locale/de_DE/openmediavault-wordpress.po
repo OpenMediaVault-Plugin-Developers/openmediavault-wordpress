@@ -3,75 +3,74 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# zubr139, 2013
-# zubr139, 2013
+# Ettore Atalan <atalanttore@googlemail.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-wordpress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-18 16:24-0600\n"
-"PO-Revision-Date: 2014-11-14 19:52+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/openmediavault-wordpress/language/uk/)\n"
+"PO-Revision-Date: 2014-12-11 00:31+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German (http://www.transifex.com/projects/p/openmediavault-wordpress/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Are you sure you want to install the Wordpress database?"
-msgstr "Дійсно встановити базу даних Wordpress?"
+msgstr "Sind Sie sicher, dass Sie die Wordpress-Datenbank installieren möchten?"
 
 msgid "Auth Key"
-msgstr ""
+msgstr "Authentifizierungsschlüssel"
 
 msgid "Auth salt"
 msgstr ""
 
 msgid "Authentication failed"
-msgstr "Помилка аутентифікації"
+msgstr "Authentifizierung fehlgeschlagen"
 
 msgid "Blog"
-msgstr "Блоґ"
+msgstr "Blog"
 
 msgid "Blog site"
-msgstr "Блоґ сайту"
+msgstr "Blogseite"
 
 msgid "Command failed "
-msgstr ""
+msgstr "Befehl fehlgeschlagen"
 
 msgid "Confirmation"
-msgstr "Підтвердження"
+msgstr "Bestätigung"
 
 msgid "Database Name"
-msgstr "Ім'я бази даних"
+msgstr "Datenbankname"
 
 msgid "Database Settings"
-msgstr "Налаштування бази даних"
+msgstr "Datenbankeinstellungen"
 
 msgid "Empty command string"
-msgstr "Порожній командний рядок"
+msgstr "Leere Befehlszeichenkette"
 
 msgid "Enable"
-msgstr "Увімкнути"
+msgstr "Aktivieren"
 
 msgid "Error "
-msgstr "Помилка"
+msgstr "Fehler"
 
 msgid "General settings"
-msgstr "Загальні налаштування"
+msgstr "Allgemeine Einstellungen"
 
 msgid "Hostname"
-msgstr "Ім'я вузла"
+msgstr "Hostname"
 
 msgid "Install DB"
-msgstr "Встановити БД"
+msgstr "DB installieren"
 
 msgid "Installing Wordpress database"
-msgstr ""
+msgstr "Wordpress-Datenbank wird installiert"
 
 msgid "Launch blog site"
-msgstr ""
+msgstr "Blogseite starten"
 
 msgid "Logged In Key"
 msgstr ""
@@ -80,25 +79,25 @@ msgid "Logged In salt"
 msgstr ""
 
 msgid "MySQL root Password"
-msgstr "Пароль MySQL root"
+msgstr "MySQL root-Passwort"
 
 msgid "No connection to server"
-msgstr ""
+msgstr "Keine Verbindung zum Server"
 
 msgid "No login ID submitted"
-msgstr ""
+msgstr "Keine Anmeldekennung übermittelt"
 
 msgid "No msg number submitted"
 msgstr ""
 
 msgid "No password submitted"
-msgstr ""
+msgstr "Kein Passwort übermittelt"
 
 msgid "No server banner"
 msgstr ""
 
 msgid "No server specified"
-msgstr ""
+msgstr "Kein Server angegeben"
 
 msgid "Nonce Key"
 msgstr ""
@@ -107,7 +106,7 @@ msgid "Nonce salt"
 msgstr ""
 
 msgid "Password"
-msgstr "Пароль"
+msgstr "Passwort"
 
 msgid "Premature end of list"
 msgstr ""
@@ -121,40 +120,40 @@ msgid ""
 msgstr ""
 
 msgid "Secure Auth Key"
-msgstr ""
+msgstr "Sicherer Authentifizierungsschlüssel"
 
 msgid "Secure Auth salt"
 msgstr ""
 
 msgid "Settings"
-msgstr "Налаштування"
+msgstr "Einstellungen"
 
 msgid "Show tab containing blog frame."
-msgstr "Показати вкладку, що містить блоґ у вікні."
+msgstr ""
 
 msgid "Used only for installing Wordpress database and will not be saved."
-msgstr "Використовується лиш для встановлення бази даних Wordpress і не буде збережено."
+msgstr ""
 
 msgid "Username"
-msgstr "Ім'я користувача"
+msgstr "Benutzername"
 
 msgid "Wordpress"
 msgstr "Wordpress"
 
 msgid "abort"
-msgstr "викинути"
+msgstr "Abbrechen"
 
 msgid "apop authentication failed"
-msgstr "Помилка аутентифікації apop"
+msgstr ""
 
 msgid "blog"
-msgstr "блоґ"
+msgstr "Blog"
 
 msgid "connection does not exist"
-msgstr ""
+msgstr "Verbindung ist nicht vorhanden"
 
 msgid "connection not established"
-msgstr "з'єднання не встановлено"
+msgstr "Verbindung ist nicht hergestellt"
 
 msgid "no login ID submitted"
-msgstr ""
+msgstr "keine Anmeldekennung übermittelt"

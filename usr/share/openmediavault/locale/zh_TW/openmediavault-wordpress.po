@@ -3,158 +3,157 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# zubr139, 2013
-# zubr139, 2013
+# kochin <kochinc@outlook.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault-wordpress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-18 16:24-0600\n"
-"PO-Revision-Date: 2014-11-14 19:52+0000\n"
-"Last-Translator: Aaron Murray <aaron27@ryecoinc.com>\n"
-"Language-Team: Ukrainian (http://www.transifex.com/projects/p/openmediavault-wordpress/language/uk/)\n"
+"PO-Revision-Date: 2014-11-23 22:16+0000\n"
+"Last-Translator: kochin <kochinc@outlook.com>\n"
+"Language-Team: Chinese (Taiwan) (http://www.transifex.com/projects/p/openmediavault-wordpress/language/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Are you sure you want to install the Wordpress database?"
-msgstr "Дійсно встановити базу даних Wordpress?"
+msgstr "您確定要安裝 Wordpress 資料庫媽？"
 
 msgid "Auth Key"
-msgstr ""
+msgstr "驗正密鑰"
 
 msgid "Auth salt"
-msgstr ""
+msgstr "驗證加鹽"
 
 msgid "Authentication failed"
-msgstr "Помилка аутентифікації"
+msgstr "驗證失敗"
 
 msgid "Blog"
-msgstr "Блоґ"
+msgstr "部落格"
 
 msgid "Blog site"
-msgstr "Блоґ сайту"
+msgstr "部落格網站"
 
 msgid "Command failed "
-msgstr ""
+msgstr "指令失敗"
 
 msgid "Confirmation"
-msgstr "Підтвердження"
+msgstr "確認"
 
 msgid "Database Name"
-msgstr "Ім'я бази даних"
+msgstr "資料庫名稱"
 
 msgid "Database Settings"
-msgstr "Налаштування бази даних"
+msgstr "資料庫設定"
 
 msgid "Empty command string"
-msgstr "Порожній командний рядок"
+msgstr "空白指令字串"
 
 msgid "Enable"
-msgstr "Увімкнути"
+msgstr "啟用"
 
 msgid "Error "
-msgstr "Помилка"
+msgstr "錯誤"
 
 msgid "General settings"
-msgstr "Загальні налаштування"
+msgstr "一般設定"
 
 msgid "Hostname"
-msgstr "Ім'я вузла"
+msgstr "主機名稱"
 
 msgid "Install DB"
-msgstr "Встановити БД"
+msgstr "安裝資料庫"
 
 msgid "Installing Wordpress database"
-msgstr ""
+msgstr "安裝 Wordpress 資料庫中"
 
 msgid "Launch blog site"
-msgstr ""
+msgstr "推出部落格網站"
 
 msgid "Logged In Key"
-msgstr ""
+msgstr "登入密鑰"
 
 msgid "Logged In salt"
-msgstr ""
+msgstr "登入加鹽"
 
 msgid "MySQL root Password"
-msgstr "Пароль MySQL root"
+msgstr "MySQL root 密碼"
 
 msgid "No connection to server"
-msgstr ""
+msgstr "沒有連線到伺服器"
 
 msgid "No login ID submitted"
-msgstr ""
+msgstr "沒有提交登入 ID"
 
 msgid "No msg number submitted"
-msgstr ""
+msgstr "沒有提交郵件號碼"
 
 msgid "No password submitted"
-msgstr ""
+msgstr "沒有提交密碼"
 
 msgid "No server banner"
-msgstr ""
+msgstr "沒有伺服器標至"
 
 msgid "No server specified"
-msgstr ""
+msgstr "沒有指定伺服器"
 
 msgid "Nonce Key"
-msgstr ""
+msgstr "單用碼(nonce)密鑰"
 
 msgid "Nonce salt"
-msgstr ""
+msgstr "單用碼(nonce)加鹽"
 
 msgid "Password"
-msgstr "Пароль"
+msgstr "密碼"
 
 msgid "Premature end of list"
-msgstr ""
+msgstr "列表過早結束"
 
 msgid ""
 "Random key created at installation.  Must be at least 8 characters long."
-msgstr ""
+msgstr "在安裝時產生的隨機密鑰。必須長度至少是 8 字元。"
 
 msgid ""
 "Random salt created at installation.  Must be at least 8 characters long."
-msgstr ""
+msgstr "在安裝時產生的隨機加鹽。必須長度至少是 8 字元。"
 
 msgid "Secure Auth Key"
-msgstr ""
+msgstr "安全驗證密鑰"
 
 msgid "Secure Auth salt"
-msgstr ""
+msgstr "安全驗證加鹽"
 
 msgid "Settings"
-msgstr "Налаштування"
+msgstr "設定"
 
 msgid "Show tab containing blog frame."
-msgstr "Показати вкладку, що містить блоґ у вікні."
+msgstr "顯示含有部落格的瀏覽框。"
 
 msgid "Used only for installing Wordpress database and will not be saved."
-msgstr "Використовується лиш для встановлення бази даних Wordpress і не буде збережено."
+msgstr "只在安裝 Wordpress 資料庫時使用，並不會被儲存起來。"
 
 msgid "Username"
-msgstr "Ім'я користувача"
+msgstr "用戶名稱"
 
 msgid "Wordpress"
 msgstr "Wordpress"
 
 msgid "abort"
-msgstr "викинути"
+msgstr "中止"
 
 msgid "apop authentication failed"
-msgstr "Помилка аутентифікації apop"
+msgstr "apop 驗證失敗。"
 
 msgid "blog"
-msgstr "блоґ"
+msgstr "部落格"
 
 msgid "connection does not exist"
-msgstr ""
+msgstr "連接並不存在"
 
 msgid "connection not established"
-msgstr "з'єднання не встановлено"
+msgstr "連接為被建立"
 
 msgid "no login ID submitted"
-msgstr ""
+msgstr "沒有提交登入 ID"
